@@ -1,4 +1,4 @@
-package oliver;
+package oliver.strategy;
 
 import java.math.BigDecimal;
 

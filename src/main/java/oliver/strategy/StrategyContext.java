@@ -1,4 +1,4 @@
-package oliver;
+package oliver.strategy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
