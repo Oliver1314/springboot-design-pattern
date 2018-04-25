@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -22,6 +24,8 @@ public class StrategyContext {
 
     private final Map<String,Calculator> strategyMap=new ConcurrentHashMap<>();
 
+    private final List<Calculator> calculators=new ArrayList<>();
+
     /**
      * 注入所有实现Calculator接口的Bean
      * @param strategyMap
@@ -35,6 +39,17 @@ public class StrategyContext {
         });
 
     }
+
+
+//    @Autowired
+//    public StrategyContext(List<Calculator> calculators){
+//        calculators.stream().forEach(cal -> {
+//            this.calculators.add(cal);
+//        });
+//
+//        System.out.println(this.calculators+"-------------------------->>>");
+//
+//    }
 
 
     public BigDecimal calculatePrice(String level){
