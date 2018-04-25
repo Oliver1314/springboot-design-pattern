@@ -1,5 +1,6 @@
 package oliver;
 
+import oliver.strategy.StrategyContext;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class StrategyTest {
 
 
 
-        System.out.println(strategyContext.calculatePrice("general").toString() + "=============================<><><>");
+        System.out.println(strategyContext.calculatePrice("vip").toString() + "=============================<><><>");
 
 
         Thread.sleep(5000);
