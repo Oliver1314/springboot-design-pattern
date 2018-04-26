@@ -25,3 +25,7 @@ springboot  开发 设计模式demo
 3.代理模式:
         以服装生意为例子,超市和商店都想做服装生意,但是他们不方便直接去进货,所以需要个代理商Middleman,
         中间商不仅仅只是帮超市和商店跑腿,他也可以收点路费,赚点差价,这样就可以实现一个简单的AOP模式
+
+        实际上,代理分为静态代理和动态代理,其中动态代理才是真正实现Spring AOP 的方法,动态代理有种是
+        JDK的动态代理，一种CGLIB的动态代理。JDK动态代理必须实现InvocationHandler接口，然后通过
+        Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)获得动态代理对象。
