@@ -29,3 +29,9 @@ springboot  开发 设计模式demo
         实际上,代理分为静态代理和动态代理,其中动态代理才是真正实现Spring AOP 的方法,动态代理有种是
         JDK的动态代理，一种CGLIB的动态代理。JDK动态代理必须实现InvocationHandler接口，然后通过
         Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)获得动态代理对象。
+
+
+4.装饰模式:
+       装饰模式主要的目的是装饰接口的实现类,相当于实现类方法的增强。所以需要一个装饰类去实现接口,并且这个装饰类中要有
+       把这个接口作为属性。这样具体的装饰配件类就可以去继承装饰类，然后去增强实现类的方法了。
+
