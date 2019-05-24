@@ -39,6 +39,7 @@ public class DefaultProvider implements IProvider {
      * @param obj
      * @return
      */
+    @Override
     public ValidStore get2(Object obj, Map<String,Object> map) throws IllegalAccessException {
 
         //首先遍历类上的注解，给类的全部属性设置规则,如果属性上有注解，以属性上的注解为主
