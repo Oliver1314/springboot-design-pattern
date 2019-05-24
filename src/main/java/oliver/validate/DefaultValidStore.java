@@ -5,12 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author Kail
- * @version 1.0
- * @date 19-4-14
- * @description DefaultValidStore.java
- */
+
 public class DefaultValidStore implements ValidStore {
 
     private Field[] fields;

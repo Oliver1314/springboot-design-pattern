@@ -1,12 +1,7 @@
 package oliver.validate;
 
 
-/**
- * @author Kail
- * @version 1.0
- * @date 19-4-14
- * @description IValid.java
- */
+
 public interface IValid {
 
     /**

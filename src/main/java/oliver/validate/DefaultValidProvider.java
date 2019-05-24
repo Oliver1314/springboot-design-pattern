@@ -4,12 +4,7 @@ package oliver.validate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Kail
- * @version 1.0
- * @date 19-4-14
- * @description DefaultValidProvider.java
- */
+
 public class DefaultValidProvider implements ValidProvider {
 
     private static final IProvider provider = new DefaultProvider();

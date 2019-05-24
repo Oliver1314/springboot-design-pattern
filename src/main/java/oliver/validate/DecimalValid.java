@@ -1,11 +1,6 @@
 package oliver.validate;
 
-/**
- * @author Kail
- * @version 1.0
- * @date 19-4-14
- * @description 小数校验
- */
+
 public class DecimalValid implements IValid {
 
     @Override
